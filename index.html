@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery-1.12.4.min.js"></script>
+	<script src="scroll-check-plugin.js"></script>
+	<link rel="stylesheet" href="bootstrap.min.css">
+	<link href="avenir-font/demo.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<link href="uber-zoom/uber-zoom.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+	<div class="container-fluid">
+	<div id="wrapper">
+		<div class="row">
+
+			<div class="col-md-1 left-sidebar-wrapper">
+
+				<div class="row">
+					<div class="col-md-12 left-sidebar " id="floors-selections">
+						<div class="left-selection"><a class="toggle-options" href="#">Floors</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 left-sidebar" id="garage-selections">
+						<div><a class="toggle-options" href="#">Garage</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				<div class="row">
+				<!-- left-sdebar-selected -->
+					<div class="col-md-12 left-sidebar" id="selections-seclections">
+						<div class=""><a class="toggle-options" href="#">Selections</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 left-sidebar" id="elevation-selections">
+						<div><a class="toggle-options" href="#">Elevations</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				
+
+				
+
+				
+				<!-- 
+				<div class="row">
+					<div class="col-md-12 left-sidebar " id="floors-selections">
+						<div class=""><a class="toggle-options" href="#">Floors</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 left-sidebar" id="garage-selections">
+						<div><a class="toggle-options" href="#">Garage</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 left-sidebar" id="selections-seclections">
+						<div class="left-selection"><a class="toggle-options" href="#">Selections</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12 left-sidebar" id="elevation-selections">
+						<div><a class="toggle-options" href="#">Elevations</a></div>
+						<img src="images/green-line-arrow.svg">
+					</div>
+				</div>
+				 -->
+
+				
+				
+			</div>
+
+			<div class="col-md-4 middle-column" id="column-floors">
+				<div class="form-group group-selections">
+					<div class="checkbox checkbox-header">
+					Floors <span class="close-options"><a href="#">X</a></span>
+						<label class="text-wrapper-label switch">
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4 middle-column" id="column-selections">
+				<div id="toggle-wrapper">
+					<div class="form-group group-selections">
+						<div class="checkbox checkbox-header">
+						Toggle floorplan options <span class="close-options"><a href="#">X</a></span>
+							<label class="text-wrapper-label switch">
+								<!-- <input id="toggle-trigger" type="checkbox" data-toggle="toggle" data-size="small" value="">
+								<div class="slider round"></div> -->
+							</label>
+						</div>
+					</div>
+
+					<!-- <div class="form-group group-selections"></div> -->
+
+				</div>
+				<div id="toggle-header">Scroll For More</div>
+			</div>
+
+			<div class="col-md-4 middle-column" id="column-garage">
+				<div class="form-group group-selections">
+					<div class="checkbox checkbox-header">
+					Garage <span class="close-options"><a href="#">X</a></span>
+						<label class="text-wrapper-label switch">
+						</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-4 middle-column" id="column-elevations">
+				<div class="form-group group-selections">
+					<div class="checkbox checkbox-header">
+					Elevations <span class="close-options"><a href="#">X</a></span>
+						<label class="text-wrapper-label switch">
+						</label>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-6" id="svgfile">
+				<!-- <img src="905p2_ErieCO_Vector.svg" class="img-responsive"> -->
+				<!-- <svg width="100%" height="100%" data="h905p2_ErieCO_Vector.svg">
+					
+				</svg> -->
+				<!-- <svg class="icon" viewBox="0 0 32 32"><use xlink:href="h905p2_ErieCO_Vector.svg"></use></svg> -->
+			</div>
+
+
+			<div class="col-md-1 icon-wrapper">
+				<div class="row">
+					<div class="col-md-12">
+						<a href="#" class="zoom-icons"><img src="images/zoomin.png"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<a href="#" class="zoom-icons"><img src="images/zoomout.png"></a>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12" id="content">
+						
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+	</div>
+
+	<script src="javascript.js"></script>
+	<script src="bootstrap.min.js"></script>
+	<script src="svg-pan-zoom/dist/svg-pan-zoom.js"></script> 
+	<script src="iframe-size.js"></script> 
+	<!-- <script src="readmore.js"></script>  -->
+	<script type="text/javascript">
+		
+	</script>
+</body>
+</html>

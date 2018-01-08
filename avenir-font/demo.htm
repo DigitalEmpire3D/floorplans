@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Webfonts Demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+	    body, textarea { font-family:Arial, Sans-Serif; line-height:1.6em; font-size:13px; }
+	    h1 { font-size:3em; }
+	    h2, h3 { color:#999; }
+	    .content { width:780px; margin: 20px auto 40px; }
+	    .demo { font-weight:bold; font-style:normal; color: #999 }
+	    .fontdisplay {font-size:2em;line-height:150%;margin: 10px 40px 0px 0px;}
+	    .guidelines { color:#333; }
+	    pre { padding:0 0 0 20px; }
+	    hr { border:0; border-bottom:1px solid #537094; margin:20px 0; }
+	    .link { color: #537094;text-decoration:none; font-weight:bold;}
+	    .uc {text-transform:uppercase}
+	    #para1{font-family:"Avenir W01_n2";}
+#para2{font-family:"Avenir W01_n4";}
+#para3{font-family:"Avenir W01_n9";}
+
+@media all and (min-width: 0px) {
+#para1{font-family:'Avenir W01'; font-weight: 200; font-style: normal;}
+#para2{font-family:'Avenir W01'; font-weight: 400; font-style: normal;}
+#para3{font-family:'Avenir W01'; font-weight: 900; font-style: normal;}
+
+}
+    </style>
+    <style type="text/css">
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3528a13e-76ef-4b90-9740-41e42d58cd23");
+    @font-face{
+        font-family:"Avenir W01_n2";
+        src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Avenir W01";
+        src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+        src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("Fonts/4fb9056b-4ac3-488b-9bac-75741b0ff0bd.woff2") format("woff2"),url("Fonts/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("Fonts/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("Fonts/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+font-weight: 200;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Avenir W01_n4";
+        src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Avenir W01";
+        src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix");
+        src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot"),url("Fonts/75c84254-5125-412c-bc24-56769ae3b627.woff2") format("woff2"),url("Fonts/b9ebb19d-88c1-4cbd-9baf-cf51972422ec.woff") format("woff"),url("Fonts/5ed4f98e-9044-4810-88ff-74d412c1351f.ttf") format("truetype"),url("Fonts/4cb16859-16ca-4342-b89c-292dc83266af.svg#4cb16859-16ca-4342-b89c-292dc83266af") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Avenir W01_n9";
+        src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Avenir W01";
+        src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix");
+        src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot"),url("Fonts/16695c2d-c755-45a2-bdcf-c54843f39afd.woff2") format("woff2"),url("Fonts/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),url("Fonts/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),url("Fonts/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
+font-weight: 900;
+font-style: normal;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 class="demo">Fonts.com Web fonts</h1>
+        <p style="margin-top:-10px; font-size:1.5em;color:#666"><b>@font-face implementation instructions</b></p>
+        <hr />
+        <p class="uc">The fonts contained in this kit are:</p>
+        <div class="fontdisplay">
+<div id="para1"> Avenir® W01 35 Light </div>
+<div id="para2"> Avenir® W01 55 Roman </div>
+<div id="para3"> Avenir® W01 95 Black </div>
+
+        </div>
+        <hr />
+        Click here for <a class="link uc" href="demo-async.htm">asynchronous</a> web fonts implementation
+        <hr />
+        <div class="guidelines">
+            <h2>CSS Implementation Guidelines</h2>
+            <p>You and any third party web font hosting service are responsible for ensuring that the font software in the self-hosting kit, in its original format, can only be used on the Web Sites for which the self-hosting kit was downloaded and cannot be used or referenced by any other web site. This includes, but is not limited to installing adequate technical protection measures that restrict the use and/or access to the font software, for instance by utilizing JavaScript or access control mechanism for cross-origin resource sharing and protecting against use on web sites other than the Web Sites for which the self-hosting kit was downloaded by restricting domain access only to such Web Sites. You must also retain the pageview tracking code on any Web Site that you self-host. In the event this Agreement terminates for any reason, the font software included with the self-hosting kit must be deleted from the server and all copies must be destroyed or returned to Monotype Imaging.</p>
+            <p>View <a class="link" href="http://www.fonts.com/info/legal/eula/web-fonts" target="_blank">"WEB FONT SOFTWARE" LICENSE AGREEMENT</a></p>
+            <p>Font file names have been obfuscated to protect the font software. You can identify font format based on file ending:</p>
+            <ul>
+                <li>1 - TrueType (ttf)</li>
+                <li>2 - Embedded OpenType (eot)</li>
+                <li>3 - Web Open Font Format (woff)</li>
+                <li>4 - Web Open Font Format version 2 (woff2)</li>
+                <li>5 - Scalable Vector Graphics (svg)</li>
+            </ul>
+            <p class="uc" style="margin: 20px 0px -20px;"><b>Copy and paste following code in head section of the page</b></p>
+            <hr />
+            <textarea style="width:830px; height:350px; border:1 #fff solid; background-color:#fcfcfc;"><style type="text/css">
+
+@import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=3528a13e-76ef-4b90-9740-41e42d58cd23");
+    @font-face{
+        font-family:"Avenir W01_n2";
+        src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Avenir W01";
+        src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix");
+        src:url("Fonts/3511a780-31ca-4ee1-9083-89b1b7185748.eot?#iefix") format("eot"),url("Fonts/4fb9056b-4ac3-488b-9bac-75741b0ff0bd.woff2") format("woff2"),url("Fonts/c4352a95-7a41-48c1-83ce-d8ffd2a3b118.woff") format("woff"),url("Fonts/3e419b5b-c789-488d-84cf-a64009cc308e.ttf") format("truetype"),url("Fonts/ca038835-1be3-4dc5-ba25-be1df6121499.svg#ca038835-1be3-4dc5-ba25-be1df6121499") format("svg");
+font-weight: 200;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Avenir W01_n4";
+        src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Avenir W01";
+        src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix");
+        src:url("Fonts/2f5a6074-badc-4e08-83f1-ed67fe5c3d7c.eot?#iefix") format("eot"),url("Fonts/75c84254-5125-412c-bc24-56769ae3b627.woff2") format("woff2"),url("Fonts/b9ebb19d-88c1-4cbd-9baf-cf51972422ec.woff") format("woff"),url("Fonts/5ed4f98e-9044-4810-88ff-74d412c1351f.ttf") format("truetype"),url("Fonts/4cb16859-16ca-4342-b89c-292dc83266af.svg#4cb16859-16ca-4342-b89c-292dc83266af") format("svg");
+font-weight: 400;
+font-style: normal;
+    }
+    @font-face{
+        font-family:"Avenir W01_n9";
+        src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot")
+    }
+    @font-face{
+        font-family:"Avenir W01";
+        src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix");
+        src:url("Fonts/a24b3f55-c8c8-41a1-a77e-7cdf417d82f6.eot?#iefix") format("eot"),url("Fonts/16695c2d-c755-45a2-bdcf-c54843f39afd.woff2") format("woff2"),url("Fonts/5a05cf7f-f332-456f-ae67-d8c26e0d35b3.woff") format("woff"),url("Fonts/c33278bc-988e-440b-b4be-6acc095e6044.ttf") format("truetype"),url("Fonts/7bdad4a5-289b-42f9-b6fa-c5883b9e9f23.svg#7bdad4a5-289b-42f9-b6fa-c5883b9e9f23") format("svg");
+font-weight: 900;
+font-style: normal;
+    }
+
+</style>
+
+</textarea>
+            <h3>Licensing information should be included within the CSS</h3>
+<pre>/*
+This CSS resource incorporates links to font software which is the valuable copyrighted
+property of Monotype Imaging and/or its suppliers. You may not attempt to copy, install,
+redistribute, convert, modify or reverse engineer this font software. Please contact Monotype
+Imaging with any questions regarding Web Fonts:  http://www.fonts.com
+*/</pre>
+        </div>
+    </div>
+</body>
+</html>
