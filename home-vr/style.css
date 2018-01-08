@@ -1,0 +1,35 @@
+#image-wrapper {
+	position: relative;
+}
+
+#image-wrapper img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 100%;
+	height: auto;
+}
+
+#baseline {
+	z-index: -2;
+}
+
+.sunroom {
+	z-index: 2000;
+}
+.garage {
+	z-index: -1;
+}
+
+#image-wrapper iframe {
+	width: 100%;
+	min-height: 900px;
+	display: none;
+}
+
+.layer-images {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

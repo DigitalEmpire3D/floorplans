@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kitchen</title>
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="custom.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<form>
+					<fieldset class="form-group">
+						<legend>Elevation</legend>
+						<div class="form-group">
+							<!-- <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="elevation" value="clear">
+							        Clear
+							     </label>
+						    </div> -->
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="elevation" value="AmericanClassic" checked="checked">
+							        American Classic
+							     </label>
+						    </div>
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="elevation" value="BellaVista">
+							        Bella Vista
+							     </label>
+						    </div>
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="elevation" value="BellaVistaBrick">
+							        Bella Vista Brick
+							     </label>
+						    </div>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<legend>Garage</legend>
+						<div class="form-group">
+							<!-- <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="garage" value="clear">
+							        Clear
+							     </label>
+						    </div> -->
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="garage" value="" checked="checked">
+							        2 Car
+							     </label>
+						    </div>
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="garage" value="3Car">
+							        3 Car
+							     </label>
+						    </div>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<legend>Sunroom</legend>
+						<div class="form-group">
+							<!-- <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="sunroom" value="clear">
+							        Clear
+							     </label>
+						    </div> -->
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="sunroom" value="Sunroom" checked="checked">
+							        On
+							     </label>
+						    </div>
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="sunroom" value="">
+							        Off
+							     </label>
+						    </div>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<legend>View</legend>
+						<div class="form-group">
+							<!-- <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="view" value="clear">
+							        Clear
+							     </label>
+						    </div> -->
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="view" value="FrontRight" checked="checked">
+							        Front Right
+							     </label>
+						    </div>
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="view" value="FrontLeft">
+							        Front Left
+							     </label>
+						    </div>
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="view" value="Back">
+							        Back
+							     </label>
+						    </div>
+						</div>
+					</fieldset>
+
+					<fieldset class="form-group">
+						<legend>Load VR</legend>
+						<div class="form-group">
+							<div class="form-check">
+							    <label class="form-check-label">
+							        <input type="checkbox" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_AmericanClassic_Sunroom">
+							        Load / Unload VR
+							     </label>
+						    </div>
+							<!-- <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_AmericanClassic">
+							        American Classic
+							     </label>
+						    </div>
+
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_AmericanClassic_Sunroom">
+							        American Classic + Sunroom
+							     </label>
+						    </div>
+
+							<div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_BellaVista">
+							        Bella Vista
+							     </label>
+						    </div>
+
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_BellaVista_PlusSunroom">
+							        Bella Vista + Sunroom
+							     </label>
+						    </div>
+
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_BellaVistaBrick">
+							        Bella Vista Brick
+							     </label>
+						    </div>
+
+
+						    <div class="form-check">
+							    <label class="form-check-label">
+							        <input type="radio" class="form-check-input" name="load-vr" value="Foster_Int_FamilyRoom_BellaVistaBrick_PlusSunroom">
+							        Bella Vista Brick + Sunroom
+							     </label>
+						    </div> -->
+
+						</div>
+					</fieldset>
+
+
+				</form>
+			</div>
+			<div class="col-md-10" id="image-wrapper">
+				<img id="baseline" class="" src="images/Foster_Ext_FrontRight_AmericanClassic.jpg">
+				<img class="sunroom layer-images" src="">
+				<img class="garage layer-images" src="">
+				<iframe id="load" src="" ></iframe>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
